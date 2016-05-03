@@ -17,6 +17,7 @@ void help();
 ActionMap createActionMap();
 DirectionMap createDirectionMap();
 
+
 ActionMap createActionMap() {
     ActionMap tmp;
     tmp[MOVE] = "move";
