@@ -12,8 +12,10 @@ TEMPLATE = app
 SOURCES += \
     uva_prob101.cpp \
     uva_prob100.cpp \
-    application.cpp
+    application.cpp \
+    commandpattern.cpp
 
 HEADERS += \
     uva_prob101.h \
-    application.h
+    application.h \
+    commandpattern.h
