@@ -1,10 +1,7 @@
-#include <iostream>
+#include "commondefs.h"
+#include "uva_problems.h"
 
-using namespace std;
-
-void uva_Prob100();     // The 3n+1 problem
-
-void uva_Prob100() {
+int uva_Prob100() {
     string strPrompt = "Input two numbers for the range:";
     int startVal, endVal;
 
@@ -30,9 +27,4 @@ void uva_Prob100() {
         }
         cout << startVal << " " << endVal << " " << maxCount << endl;
     }
-}
-
-int main(void) {
-    uva_Prob100();
-    return 0;
 }

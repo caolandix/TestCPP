@@ -1,13 +1,11 @@
 #include "application.h"
 
+Application::Application(const int argc, char **argv) {
+    for (int i = 0; i < argc; i++)
+        m_argv.push_back(new string(argv[i]));
+}
 
-bool Application::m_created = false;
-Application *Application::m_pSelf = NULL;
-
-Application *Application::getInstance() {
-    if (!m_created) {
-        m_pSelf = new Application();
-        m_created = true;
-    }
-    return m_pSelf;
+Application::~Application() {
+    if (m_argv.size() > 0)
+        m_argv.clear();
 }

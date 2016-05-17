@@ -13,9 +13,11 @@ SOURCES += \
     uva_prob101.cpp \
     uva_prob100.cpp \
     application.cpp \
-    commandpattern.cpp
+    main.cpp \
+    cmdpatapplication.cpp
 
 HEADERS += \
-    uva_prob101.h \
     application.h \
-    commandpattern.h
+    commondefs.h \
+    uva_problems.h \
+    cmdpatapplication.h

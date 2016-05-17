@@ -1,10 +1,5 @@
-#include <iostream>
-#include <map>
-#include <string>
-
-#include "uva_prob101.h"
-
-using namespace std;
+#include "commondefs.h"
+#include "uva_problems.h"
 
 typedef enum { MOVE = 0, PILE, QUIT } ActionDefs;
 typedef enum { ONTO = 0, OVER } DirectionDefs;
@@ -12,7 +7,6 @@ typedef map<ActionDefs, string> ActionMap;
 typedef map<DirectionDefs, string> DirectionMap;
 
 // prototypes...
-void uva_Prob101();     // The block problem
 void help();
 ActionMap createActionMap();
 DirectionMap createDirectionMap();
@@ -26,8 +20,8 @@ ActionMap createActionMap() {
 }
 DirectionMap createDirectionMap() {
     DirectionMap tmp;
-    tmp[MOVE] = "onto";
-    tmp[PILE] = "over";
+    tmp[ONTO] = "onto";
+    tmp[OVER] = "over";
 }
 
 void help() {
@@ -35,7 +29,7 @@ void help() {
 }
 
 
-void uva_Prob101() {
+int uva_Prob101() {
 
     ActionMap mapActions = createActionMap();
     DirectionMap mapDirections = createDirectionMap();
@@ -53,9 +47,4 @@ void uva_Prob101() {
     }
     cin >> action >> srcBlks >> direction >> tgtBlks;
 
-}
-
-int main(void) {
-    uva_Prob101();
-    return 0;
 }
