@@ -10,15 +10,18 @@ public:
     ~CmdPatApplication();
 
     virtual int run();
+    void displayDescriptions();
 private:
     typedef enum {
-        APP_100 = 0,
+        LANG_000 = 0,
+        APP_100,
         APP_101
     } CmdType;
 
     typedef struct {
         CmdType type;
         string cmdname;
+        string desc;
         int (*pf)();
     } CommandInfo;
     virtual int verifyCmdArgs();

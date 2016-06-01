@@ -14,10 +14,12 @@ SOURCES += \
     uva_prob100.cpp \
     application.cpp \
     main.cpp \
-    cmdpatapplication.cpp
+    cmdpatapplication.cpp \
+    lang_problems.cpp
 
 HEADERS += \
     application.h \
     commondefs.h \
     uva_problems.h \
-    cmdpatapplication.h
+    cmdpatapplication.h \
+    lang_problems.h
